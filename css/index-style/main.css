@@ -1,0 +1,30 @@
+
+body {
+    margin-top: 70px;
+}
+
+/* Anker "Link" */
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+/* About me */
+.ABOUT-div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* My name animation */
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+}
+
+.my-name {
+    font-family: monospace;
+    display: inline-block;
+    min-width: 290px;
+}

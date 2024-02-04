@@ -1,0 +1,36 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.a-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.fs-34px {
+    font-size: 34px;
+}
+
+.mw-300px {
+    max-width: 300px;
+}
+
+.td-u-2px {
+    text-decoration: underline 2px;
+}
+
+.bg-6c757d {
+    background-color: #051c31;
+}
+
+.bs-basic {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ta-l {
+    text-align: left;
+}

@@ -1,0 +1,14 @@
+@media (prefers-color-scheme: dark) {
+    .body {
+        background-color: #282b30 ;
+    }
+
+    header .breadcrumb-item,
+    header ion-icon {
+        color: #e0e1dd;
+    }
+
+    .accordion-item {
+        background-color: #333;
+    }
+}

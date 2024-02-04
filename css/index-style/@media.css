@@ -1,0 +1,274 @@
+
+/* Screenwidth 0 - 1000 */
+@media (max-width: 1000px) {
+    .center-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ABOUT-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio-icon {
+        width: 15%;
+        height: 15%;
+    }
+
+    .main-title {
+        font-size: 20px;
+    }
+}
+
+/* Screenwidth 1000 - 1500 */
+@media (min-width: 1000px) {
+    .center-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+
+    .center-container {
+        margin-right: 80px;
+        margin-bottom: 100px;
+    }
+
+    .ABOUT-div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #home {
+        height: 700px;
+    }
+}
+
+/* Screenwidth 1500 - END */
+@media (min-width: 1500px) {
+    .center-container {
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+
+    .body {
+        margin-top: 110px;
+    }
+
+    .text-container h2{
+        margin-top: 80px;
+    }
+}
+
+/** Scheme: dark **/
+@media (prefers-color-scheme: dark) {
+
+    .body {
+        background-color: #282b30;
+    }
+    
+    h1 {
+        color: #e0e1dd;
+    }
+
+    .navbar {
+        background-color: #343a40;
+        box-shadow: 0px 5px 10px rgba(82, 102, 145, 0.2)
+    }
+
+    .navbar a {
+        color: #e0e1dd;
+    }
+
+    body {
+        background-color: #424242;
+    }
+
+    .container {
+        background-color: #495057;
+    }
+
+    .card {
+        background-color: #e5e5e5;
+    }
+
+    p {
+        color: rgb(212, 212, 212);
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    
+    .navbar a:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: rgb(179, 179, 179);
+        transform: scaleX(0);
+        transition: transform 0.5s ease;
+    }
+       
+    .navbar a:hover:after {
+        transform: scaleX(1);
+        background-color: #ffffff;
+    }
+
+    #home {
+        background-image: url("../../img/background-image-home-dark.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #home h2, .main-title {
+        color: #f8f9fa;
+    }
+
+    .portfolio-icon {
+        content: url(../../img/portfolio-icon-light.png);
+    }
+
+    .my-projects-title {
+        color: #f8f9fa;
+    }
+
+    #projects .container {
+        background-color: #282b30;
+    }
+
+    #projects .card {
+        background-color: #292a2c;
+    }
+
+    #projects h5 {
+        color: #f8f9fa;
+    }
+
+    .ABOUT-div {
+        background-color: #282b30;
+    }
+
+    .ABOUT-div h2, h3 {
+        color: #f8f9fa;
+    }
+
+    #contact .card{
+        background-color: #292a2c;
+    }
+
+    #contact .card-header, .card-title {
+        color: #e0e1dd;
+    }
+
+    .social-links ion-icon:nth-child(1) {
+        color: #7289da;
+    }
+  
+    .social-links ion-icon:nth-child(5) {
+        color: #c75696;
+    }
+  
+    .social-links ion-icon:nth-child(3) {
+        color: #b4b4b4
+    }
+
+    .my-name {
+        color: #00b4d8;
+    }
+
+    @keyframes shadowChange {
+        0% {
+            box-shadow: 0 0 10px rgb(255, 255, 255, 0.5);
+        }
+        50% {
+            box-shadow: 0 0 10px rgba(60, 134, 168, 0.6);
+        }
+        100% {
+            box-shadow: 0 0 10px rgb(255, 255, 255, 0.5);
+        }
+      }
+    
+    #shadow-changing-div {
+        animation: shadowChange 3s infinite;
+    }
+
+    .card-footer {
+        color: #b4b4b4;
+    }
+}
+
+/** Scheme: light **/
+@media (prefers-color-scheme: light) {
+    .body {
+        background-color: #f8f9fa;
+    }
+
+    .navbar {
+        background-color: #ffffff;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
+    }
+
+    .navbar a {
+        color: #000000;
+    }
+
+    h1, h2 {
+        color: #000000;
+    }
+
+    #home {
+        background-image: url("../../img/background-img-home.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #home a{
+        color: #000000;
+    }
+
+    a:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: rgb(39, 39, 39);
+        transform: scaleX(0);
+        transition: transform 0.5s ease;
+    }
+       
+    a:hover:after {
+        transform: scaleX(1);
+        background-color: #000000;
+    }
+
+    .my-name {
+        color: #0092af;
+    }
+
+    @keyframes shadowChange {
+        0% {
+          box-shadow: 0 0 10px rgba(0, 52, 77, 1);
+        }
+        50% {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        100% {
+          box-shadow: 0 0 10px rgba(0, 52, 77, 1);
+        }
+      }
+    
+    #shadow-changing-div {
+        animation: shadowChange 3s infinite;
+    }
+}

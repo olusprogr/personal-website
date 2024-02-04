@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/index-style/@media.css">
+    <link rel="stylesheet" href="css/index-style/main.css">
+    <title>My Portfolio</title>
+</head>
+<body class="body">
+    <nav>
+        <div class="navbar fixed-top justify-content-evenly" id="shadow-changing-div">
+            <div class="d-flex a-fade-in align-items-center" id="navbar-top">
+                <img src="img/portfolio-icon.png" class="portfolio-icon">
+                <h2 class="main-title mx-2">My Portfolio</h2>
+            </div>
+            <ul class="nav fs-5 py-1 py-md-4 justify-content-center a-fade-in">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header class="a-fade-in">
+        <home>
+            <div class="container-fluid py-5" id="home">
+                <div class="center-container justify-content-evenly mt-5">
+                    <div class="text-container text-center">
+                        <h2>Hi, I'm <span class="fs-34px fw-bold my-name ta-l" id="my-name" style="margin-left: 7px;"></span><br>A Back-end developer.</h2>
+                        <p class="mt-4 fs-5">This is my official Portfolio to showcase all my works related to programming</p>
+                        <div class="social-links mt-5 mb-5">
+                            <ion-icon name="logo-discord" style="margin-right: 5px;"></ion-icon>
+                            <a href="https://discord.gg/olus.progr class=" class="link-offset-2" style="font-weight: bold; margin-right: 5px;"> DISCORD •</a>
+                            <ion-icon name="logo-github"></ion-icon>
+                            <a href="https://github.com/olusprogr" class="link-offset-2" style="font-weight: bold; margin-right: 5px;"> GITHUB •</a>
+                            <ion-icon name="logo-instagram" style="margin-left: 5px;"></ion-icon>
+                            <a href="https://www.instagram.com/olus.progr" class="link-offset-2" style="font-weight: bold;"> INSTAGRAM</a>
+                        </div>
+                    </div>
+                    <img src="img/image-of-me.jpg" class="rounded mb-5 bs-basic" style="max-width: 300px;">
+                </div>
+            </div>
+        </home>
+    </header>
+
+    <main>
+        <about>
+            <div class="ABOUT-div py-3 container" id="about">
+                <div class="text-center ml-3">
+                    <div class="mt-5 mb-3">
+                        <button type="button" class="btn btn-outline-primary my-3 mx-2"  onclick="changeText('aboutMe')">ABOUT ME</button>
+                        <button type="button" class="btn btn-outline-primary my-3 mx-2" disabled onclick="changeText('skills')">SKILLS</button>
+                        <button type="button" class="btn btn-outline-primary my-3 mx-2" onclick="changeText('experience')">EXPERIENCE</button>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="mx-xl-5 mb-5">
+                                <h2 id="dynamicText-about-me-h2">My Journey</h2>
+                                <div class="mx-xl-5">
+                                    <p id="dynamicText-about-me-p" class="my-4 mx-5">In the beginning, it was a challenge – the code looked like a complicated mix of letters and symbols.
+                                        I remember spending hours watching programming tutorials to learn the basics. One day, I stumbled upon the fascinating of GUI programming with the Tkinter library. It was a breakthrough!
+                                        Suddenly, I could create my own user interfaces and bring my creative ideas to life.
+                                        One of my early projects was crafting a food ordering menu like that one at my school. With Tkinter, I could design interactive menus and implement ordering processes.<br><br>
+                                        Since then, I've steadily expanded my knowledge and worked on various projects. Programming, for me, is a constant journey of discovery, and I look forward to realizing many exciting projects ahead.
+                                    </p>
+                                </div>
+                                <h3 id="dynamicText-about-me-h3">Currently diving deep into <span style='text-decoration: underline 2px;'>Web Development</span> and 
+                                    <span style='text-decoration: underline 2px;'>Machine Learning</span>.</h3>
+                                <p id="dynamicText-about-me-p-2" class="my-4 mx-4">Now, let me take you through some of these projects :)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="img/image-of-me2.jpeg" class="rounded mw-300px mx-5 bs-basic">
+                </div>
+            </div>
+        </about>
+
+        <projects>
+            <div id="projects" class="my-5">
+                <div class="container text-center my-5">
+                    <h2 class="my-5 my-projects-title">My Projects</h2>
+                    <div class="row justify-content-center">
+    
+                        <div class="card col-lg-4 col-md-6 mb-4 mx-5" style="width: 18rem;">
+                            <img src="img/Archtietc3tst.jpg" class="img-fluid card-img mt-2">
+                            <div class="card-body">
+                              <h5 class="card-title">ArchiTect Discord Bot <ion-icon name="logo-python"></ion-icon></h5>
+                              <p class="card-text">A fast, efficient, and user-friendly bot with numerous features for your Discord servers.</p>
+                              <a href="project-architect.html" class="btn btn-primary">See More</a>
+                            </div>
+                        </div>
+    
+                        <div class="card col-lg-4 col-md-6 mb-4 mx-5" style="width: 18rem;">
+                            <img src="img/banking-system.png" class="img-fluid card-img mt-2">
+                            <div class="card-body">
+                              <h5 class="card-title">Banking System <ion-icon name="logo-python"></ion-icon></h5>
+                              <p class="card-text">Streamlined Banking System: A Python OOP and SQL Implementation.</p>
+                              <a href="project-banking-system.html" class="btn btn-primary">See More</a>
+                            </div>
+                        </div>
+    
+                        <div class="card col-lg-4 col-md-6 mb-4 mx-5" style="width: 18rem;">
+                            <img src="img/website.png" class="img-fluid card-img mt-2">
+                            <div class="card-body">
+                              <h5 class="card-title">My Portfolio <ion-icon name="logo-javascript"></ion-icon></h5>
+                              <p class="card-text">This is my official Portfolio to showcase all my works related to programming.</p>
+                              <a href="project-my-portfolio.html" class="btn btn-primary">See More</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-lg-4 col-md-6 mt-4" style="width: 18rem;">
+                            <img src="" class="img-fluid card-img mt-2">
+                            <div class="card-body">
+                              <h5 class="card-title">Pay2drink <ion-icon name="logo-angular"></ion-icon></h5>
+                              <p class="card-text">Pay2Drink is an Angular-based solution for beverage vending machines, allowing users to conveniently order and pay for their favorite drinks.</p>
+                              <a href="project-pay2drink.html" class="btn btn-primary">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </projects>
+    </main>
+
+    <footer class="a-fade-in">
+        <contact>
+            <div id="contact" class="mx-5 py-5">
+                <div class="card text-center mx-xl-5">
+                    <div class="card-header">Footer</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Contacts</h5>
+                      <p class="card-text"><ion-icon name="mail-outline"></ion-icon> E-mail: olus.main@gmail.com
+                        <br><ion-icon name="logo-instagram"></ion-icon> Instagram: olusprogr
+                        <br><ion-icon name="logo-discord"></ion-icon> Discord: olus.progr</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-body-secondary"><p>Last time updated: 01/02/2024</p></div>
+                </div>
+            </div>
+        </contact>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/eventLisener.js"></script>
+</body>
+</html>
